@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f5d79b;  /* Light brown canvas color */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bayou-logo {
+  width: 70%;
+  height: 70%;
+  margin-right: 70px;
 }
+/* App.css */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Generic card style */
+.card {
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;  /* gives a slightly curved border */
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smalls-card, .poboys-card, .baskets-card, .sides-card {
+  /* other styles you might have */
+  padding: 10px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This aligns items vertically in the middle if they have different heights */
+}
+
+/* Optional: Add some styling to the price for a better appearance */
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
 }
